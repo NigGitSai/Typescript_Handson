@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var nums = [5, 1, 9, 2];
+nums.sort(function (a, b) { return a - b; });
+console.log("After sorting in ascending order : ".concat(nums));
+var scores = [10, 50, 20, 40];
+scores.sort(function (a, b) { return a - b; });
+console.log("Srting in descending order : ".concat(scores));
+var fruits = ["banana", "apple", "mango"];
+fruits.sort(function (a, b) { return a.localeCompare(b); });
+console.log("Sorted fruits array ".concat(fruits));
+var prices = ["$50", "$10", "$30", "$20"];
+prices.sort(function (a, b) { return a.localeCompare(b); });
+console.log("Prices sorted : ".concat(prices));
+var words = ["cat", "elephant", "dog", "tiger"];
+words.sort(function (a, b) { return a.length - b.length; });
+console.log("words sorted based on length : ".concat(words));

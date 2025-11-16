@@ -1,0 +1,14 @@
+var fruits = ["apple", "banana", "cherry"];
+console.log("Does banana exists in fruits array: ", fruits.includes("banana"));
+var numberArr = [10, 30, 60, 90];
+var greaterThanFifty = numberArr.find(function (num) { return num > 50; });
+console.log(greaterThanFifty);
+var animals = ["cat", "dog", "cow"];
+var dogIndex = animals.findIndex(function (n) { return n === "dog"; });
+console.log("Dog Index is ".concat(dogIndex));
+var arr3 = [3, -2, 5];
+var isAnyNegativeNum = arr3.some(function (n) { return n < 0; });
+console.log("Is there any negative number : ".concat(isAnyNegativeNum));
+var arr4 = [2, 4, 6];
+var allPositive = arr4.every(function (n) { return n > 0; });
+console.log("All Positive numbers? : ".concat(allPositive));

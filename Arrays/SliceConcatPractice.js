@@ -1,0 +1,18 @@
+var numArr = [1, 2, 3, 4, 5];
+var copyOfNumArr = numArr.slice(0, 4);
+console.log("Number Array : ".concat(numArr));
+console.log("Copy of Number Array : ".concat(copyOfNumArr));
+var arr2 = [10, 20, 30, 40];
+var copyOfArr2 = arr2.slice(2, 4);
+console.log("Array 2: ".concat(arr2));
+console.log("Copy of Array 2 : ".concat(copyOfArr2));
+var aArr = [1, 2];
+var bArr = [3, 4];
+var cArr = aArr.concat(bArr);
+console.log("A array ".concat(aArr, " b array ").concat(bArr, " "));
+console.log("C array ".concat(cArr));
+var dArr = ["a", "b"];
+var eArr = dArr.concat("c");
+console.log("eArr ".concat(eArr));
+var eArrMiddleElement = eArr.slice(1, 2);
+console.log("E Array Middle Element ".concat(eArrMiddleElement));

@@ -1,0 +1,12 @@
+const numArr: number[] = [10,20].concat(30,40);
+const middleNumbers: number[]=numArr.slice(1,numArr.length-1);
+console.log(`Middle numbers ar ${middleNumbers}`);
+const arr2: number[] = [5, 10, 15, 20];
+const numGr100: number[]= arr2.map(n=>n*n).filter(n=>n>100);
+console.log("Numbers greater than 100 are : "+numGr100);
+const logArr: string[] = ["error", "warning", "ok"];
+const flag: boolean = logArr.some(a=>a.includes("err"));
+console.log(`Any log word has err : ${flag}`);
+const numArr3: number[] = [1, 2, 3, 4, 5, 6];
+const evenNO: string[] = numArr3.filter(e=>e%2===0).map(e=>`Even: ${e}`);
+console.log(`Even numbers : ${evenNO}`);

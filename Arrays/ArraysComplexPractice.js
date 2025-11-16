@@ -1,0 +1,12 @@
+var numArr = [10, 20].concat(30, 40);
+var middleNumbers = numArr.slice(1, numArr.length - 1);
+console.log("Middle numbers ar ".concat(middleNumbers));
+var arr2 = [5, 10, 15, 20];
+var numGr100 = arr2.map(function (n) { return n * n; }).filter(function (n) { return n > 100; });
+console.log("Numbers greater than 100 are : " + numGr100);
+var logArr = ["error", "warning", "ok"];
+var flag = logArr.some(function (a) { return a.includes("err"); });
+console.log("Any log word has err : ".concat(flag));
+var numArr3 = [1, 2, 3, 4, 5, 6];
+var evenNO = numArr3.filter(function (e) { return e % 2 === 0; }).map(function (e) { return "Even: ".concat(e); });
+console.log("Even numbers : ".concat(evenNO));

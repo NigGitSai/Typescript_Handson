@@ -1,0 +1,18 @@
+const numArr: number[] = [1,2,3,4,5];
+const copyOfNumArr: number[]=numArr.slice(0,4);
+console.log(`Number Array : ${numArr}`);
+console.log(`Copy of Number Array : ${copyOfNumArr}`);
+const arr2: number[] = [10,20,30,40];
+const copyOfArr2: number[] = arr2.slice(2,4);
+console.log(`Array 2: ${arr2}`);
+console.log(`Copy of Array 2 : ${copyOfArr2}`);
+const aArr: number[] = [1,2];
+const bArr: number[] = [3,4];
+const cArr = aArr.concat(bArr);
+console.log(`A array ${aArr} b array ${bArr} `);
+console.log(`C array ${cArr}`);
+const dArr: string[] = ["a","b"];
+const eArr: string[]= dArr.concat("c");
+console.log(`eArr ${eArr}`);
+const eArrMiddleElement: string[] = eArr.slice(1,2);
+console.log(`E Array Middle Element ${eArrMiddleElement}`);

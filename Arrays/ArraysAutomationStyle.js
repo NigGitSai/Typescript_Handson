@@ -1,0 +1,17 @@
+var items = ["PASS", "FAIL", "PASS", "FAIL"];
+var failCount = items.filter(function (i) { return i === "FAIL"; }).length;
+console.log("Fail Count is ".concat(failCount));
+var numArr = [100, 150, 200];
+var numToStr = numArr.map(function (e) { return e.toString; });
+var texts = [" Login ", "Logout ", " Home"];
+var word = texts.map(function (w) { return w.trim(); }).join("|");
+console.log("Words framed : ".concat(word));
+var buttons = ["Submit", "Cancel", "Reset"];
+var canIsFound = buttons.some(function (btn) { return btn.includes("Can"); });
+console.log("Any word contain text 'can' : ".concat(canIsFound));
+var lengthGr4 = buttons.every(function (btn) { return btn.length >= 4; });
+console.log("All words length greater than 4 : ".concat(lengthGr4));
+var words2 = ["#login", "#logout", "#help"];
+var logOutIndex = words2.findIndex(function (w) { return w === "#logout"; });
+words2.splice(logOutIndex, 1);
+console.log("After removing logout word : ".concat(words2));

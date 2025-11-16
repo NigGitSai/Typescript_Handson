@@ -1,0 +1,23 @@
+const fruits = ["apple", "banana"];
+fruits.push("cherry");
+console.log(`Fruits array ${fruits}`);
+const arrayNum: number[] = [1,2];
+arrayNum.push(3);
+arrayNum.push(4);
+console.log(`Number array length : `,arrayNum.length);
+console.log(`Number array :`+arrayNum);
+const colors: string[] = [];
+colors.push("red");
+colors.push("green");
+colors.push("blue");
+console.log(`Colors array: ${colors}`);
+const numArr2: number[] = [10, 20, 30, 40];
+numArr2.pop();
+console.log(`After using pop() first time ${numArr2}`);
+numArr2.pop()
+console.log(`After using pop() second time ${numArr2}`);
+const numArr3: number[] = [5,10];
+numArr3.push(15);
+numArr3.pop();
+numArr3.push(20);
+console.log(`Number Array 3 elements : ${numArr3}`);

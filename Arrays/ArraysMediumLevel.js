@@ -1,0 +1,13 @@
+var cart = ["Apple", "Banana"];
+cart.push('Orange');
+cart.shift();
+console.log("Cart Array : ".concat(cart));
+var numArr = [10, 20, 30, 40];
+numArr.pop();
+numArr.unshift(5);
+console.log("Number Array : ".concat(numArr));
+var aArr = [1, 2];
+var numArr2 = aArr.concat(3, 4);
+numArr2.shift();
+numArr2.pop();
+console.log("Number Array 2 elements : ".concat(numArr2));

@@ -1,0 +1,20 @@
+import { findSourceMap } from "module";
+
+const nums = [5, 1, 9, 2];
+nums.sort((a,b)=>a-b);
+console.log(`After sorting in ascending order : ${nums}`);
+const scores = [10, 50, 20, 40];
+scores.sort((a,b)=>b-a);
+console.log(`Srting in descending order : ${scores}`);
+const fruits = ["banana", "apple", "mango"];
+fruits.sort((a,b)=>a.localeCompare(b));
+console.log(`Sorted fruits array ${fruits}`);
+const prices = ["$50", "$10", "$30", "$20"];
+prices.sort((a,b)=>a.localeCompare(b));
+console.log(`Prices sorted : ${prices}`);
+const words = ["cat", "elephant", "dog", "tiger"];
+words.sort((a,b)=>a.length-b.length);
+console.log(`words sorted based on length : ${words}`);
+const nums2 = [3, 1, 4, 1, 5];
+const numsSorted = [...nums2].sort((a,b)=>(a-b));
+console.log(`Numbers sorted after copying : ${numsSorted}`);

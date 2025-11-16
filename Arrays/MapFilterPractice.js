@@ -1,0 +1,11 @@
+var numArr = [1, 2, 3];
+var mulBy2Arr = numArr.map(function (n) { return n * 2; });
+console.log("Original number array ".concat(numArr));
+console.log("using map mul by 2: ".concat(mulBy2Arr));
+var alphabets = ["one", "two", "three"];
+var upperCaseLetters = alphabets.map(function (e) { return e.toUpperCase(); });
+console.log("Upper case letters : ".concat(upperCaseLetters));
+var numArr2 = [10, 15, 20, 25];
+var evenNo = numArr2.filter(function (e) { return (e % 2) === 0; });
+console.log("Original number array: ".concat(numArr2));
+console.log("Even no extracted using filters: ".concat(evenNo));

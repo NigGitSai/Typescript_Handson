@@ -1,0 +1,13 @@
+var numArr = [1, 5, 8, 12, 20];
+var newNumArr = numArr.filter(function (n) { return n % 2 === 0; }).map(function (n) { return n * 10; });
+console.log("New Number Array : ".concat(newNumArr));
+var tools = ["Playwright", "Selenium", "Cypress", "TestCafe"];
+var filteredTools = tools.filter(function (e) { return !e.includes("e"); });
+console.log("Filtered tools : ".concat(filteredTools));
+var numArr2 = [100, 200, 50, 300];
+var greaterThan150 = numArr2.find(function (num) { return num > 150; });
+console.log("First number greater than 150 : ".concat(greaterThan150));
+var indexOfNumGr150 = numArr2.findIndex(function (num) { return num > 150; });
+console.log("Index of number greater than 150: ".concat(indexOfNumGr150));
+var allPositive = numArr2.every(function (num) { return num > 0; });
+console.log("Are all numbers positive in number Array 2: ".concat(allPositive));

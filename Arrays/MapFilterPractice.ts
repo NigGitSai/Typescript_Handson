@@ -1,0 +1,11 @@
+const numArr: number[]= [1,2,3];
+const mulBy2Arr: number []= numArr.map(n=>n*2);
+console.log(`Original number array ${numArr}`);
+console.log(`using map mul by 2: ${mulBy2Arr}`);
+const alphabets: string[] = ["one", "two", "three"];
+const upperCaseLetters: string[] = alphabets.map(e=>e.toUpperCase());
+console.log(`Upper case letters : ${upperCaseLetters}`);
+const numArr2: number[] = [10, 15, 20, 25];
+const evenNo: number[] = numArr2.filter(e=>(e%2)===0);
+console.log(`Original number array: ${numArr2}`);
+console.log(`Even no extracted using filters: ${evenNo}`);
